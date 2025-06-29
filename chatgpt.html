@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chatgpt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e0ffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: #00bcd4;
+      padding: 15px;
+      text-align: right;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    .main {
+      text-align: center;
+      padding: 30px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .main img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      animation: zoomIn 2s ease;
+    }
+
+    h3 {
+      color: #e91e63;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .section {
+      background: white;
+      margin: 30px auto;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      animation: slideUp 2s ease;
+    }
+
+    h4 {
+      color: #007acc;
+      border-bottom: 2px solid #00acc1;
+      padding-bottom: 5px;
+    }
+
+    .section a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #0288d1;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .section a:hover {
+      color: #d81b60;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(100px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes zoomIn {
+      from {transform: scale(0.7); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="loginpage.html">Login</a>
+  <a href="registrationpage.html">Registration</a>
+  <a href="helppage.html">Help</a>
+</nav>
+
+<div class="main">
+  <img src="coder.jfif" alt="image not found">
+  <h3>Hello Guys! I'M Santosh</h3>
+  <p>
+    My name is Santosh Kumar, and I am a Polytechnic student.<br>
+    Currently, I am undergoing summer training in Noida Sector 63.<br>
+    This website is created to share my technical journey and projects.
+  </p>
+</div>
+
+<div class="section">
+  <h4>ACHIEVEMENT:</h4>
+  <a href="certificate.jpg" target="_blank">Master Diploma in Computer Application</a>
+</div>
+
+<div class="section">
+  <h4>PROJECTS:</h4>
+  <a href="Image Gallery.html" target="_blank">Image Gallery</a>
+  <a href="btechform.html" target="_blank">Btech Form</a>
+  <a href="patientform.html" target="_blank">Patient Form</a>
+  <a href="timetable.html" target="_blank">Time Table</a>
+  <a href="chess.html" target"_blank">Chess Board</a>
+  <a href="Fieldsetform.html" target"_blank">Fieldset Form</a>
+</div>
+
+</body>
+</html>

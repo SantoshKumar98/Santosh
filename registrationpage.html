@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #a8edea, #fed6e3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .reg-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      width: 350px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fe5196;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #fe5196;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #e04687;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="reg-box">
+    <h2>Registration Form</h2>
+    <form>
+      <input type="text" name="name" placeholder="Enter your Name" required>
+      <input type="email" name="email" placeholder="Enter your Email" required>
+      <input type="password" name="password" placeholder="Create Password" required>
+      <input type="password" name="confirm" placeholder="Confirm Password" required>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
